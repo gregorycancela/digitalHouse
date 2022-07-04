@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <article>
+        <h1>Login</h1>
+        <form action="./servidor/"
+            name="painelDeCadastro"
+            method="post">
+        
+            <fieldset>
+                <legend>Login de Usuário</legend>
+                <div>
+                    <label for="emailDeUsuario">Email*</label>
+                    <input type="email" name="emailDeCadastro" id="emailDeUsuario" required>
+                </div>
+
+                <div>
+                    <label for="senhaDeUsuário">Senha de Usuário*</label>
+                    <input type="password" name="senha" id="senhaDeUsuário" required>
+                </div>
+                <div>
+                    <label for="manterConexao">Mantenha-me Conectado</label>
+                    <input type="checkbox" name="manterConectado" id="manterConexao" value="Mantenha-me Conectado">
+                </div>
+            </fieldset>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </article>
+</body>
+</html>
