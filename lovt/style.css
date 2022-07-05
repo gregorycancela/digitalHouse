@@ -1,2 +1,72 @@
 *{margin: 0; padding: 0;
 }
+
+header {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: solid 2px;
+}
+
+#logoEscrito {
+    font-size: 35px;
+    margin-left: 5vh;
+    color: #808080;
+    text-decoration: none;
+}
+
+.textoLogo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0.5vh;
+    flex-grow: 0.95;
+    color: #808080;
+    font-size: 10px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.textoLogo span {
+    line-height: 13px;
+    margin-left: 2px;
+}
+
+.menuDrop:hover .navbar {
+    display: block;
+}
+
+.navbar {
+    display: none;
+    background-color: white;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop {
+    
+    height: 3px;
+    width: 50px;
+    cursor: pointer;
+    background-color: #808080;
+    display: block;
+    margin: 4px;
+    transition: width 1s ease, margin-left 1s ease;
+}
+
+div:hover .drop:nth-child(2) {
+    margin-left: 15px;
+}
+
+div:hover .drop {
+    width: 35px;
+    transition: width 1s ease, margin-left 1s ease;
+}
